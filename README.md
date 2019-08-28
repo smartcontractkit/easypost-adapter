@@ -89,6 +89,17 @@
 }
 ```
 
+## Run with Docker
+```bash
+docker build . -t easypost-adapter
+docker run -d \
+    --name easypost-adapter \
+    -p 8080:8080 \
+    -e PORT=8080 \
+    -e API_KEY=Your_API_key_here \
+    easypost-adapter
+```
+
 ## Install
 
 ```bash
